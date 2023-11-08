@@ -27,7 +27,7 @@ public class Agenda {
     }
 
     public void pesquisar(int mes, int dia){
-        Compromisso[] comps = new Compromisso[this.qtd];
+        // Compromisso[] comps = new Compromisso[this.qtd];
 
         for (Compromisso compromisso : compromissos) {
             System.out.println(compromisso.getData());

@@ -1,6 +1,4 @@
-import java.io.IOException;
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Main {
   public static void main(String[] args) {
@@ -33,6 +31,7 @@ public class Main {
 
       System.out.println(soma + " leds");
       soma = 0;
+      obj.close();
     }
   }
 }
