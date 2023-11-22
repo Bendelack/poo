@@ -4,7 +4,6 @@ class Main {
     public static void main(String[] args){
         Scanner obj = new Scanner(System.in);
         int n = obj.nextInt();
-        String el;
         String[] array = new String[n];
         for (int i = 0; i < n; i++){
             array[i] = obj.next();
@@ -23,5 +22,6 @@ class Main {
             System.out.print(" " + array[i]);
         }
         System.out.println();
+        obj.close();
     }
 }

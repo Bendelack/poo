@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -40,5 +39,6 @@ public class Main {
 
             System.out.println(p);
         }
+        obj.close();
     }
 }

@@ -23,5 +23,6 @@ class Main {
         }
         System.out.println();
         System.out.println("The biggest word: " + maior);
+        obj.close();
     }
 }

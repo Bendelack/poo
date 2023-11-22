@@ -1,4 +1,3 @@
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -30,5 +29,7 @@ public class Main {
     total -= soma;
 
     System.out.println("Falta(m) " + total + " pomekon(s).");
+    obj.close();
+
   }
 }

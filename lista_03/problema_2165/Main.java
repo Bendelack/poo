@@ -8,5 +8,7 @@ class Main {
             System.out.println("TWEET");
         else
             System.out.println("MUTE");
+        obj.close();
+    
     }
 }
