@@ -2,7 +2,8 @@
 
 public class Banco extends Conta {
 
-    public Conta ( double numero, double saldo ) {
+    public Banco ( double numero, double saldo ) {
+        super(numero, saldo);
 
         this.numero = numero;
         this.saldo = saldo;
