@@ -21,7 +21,7 @@ classDiagram
     }
 
     class Professor {
-        -disciplina: String
+        -disciplina: Disciplina
         +getDisciplina(): String
     }
 
