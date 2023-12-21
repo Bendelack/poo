@@ -25,6 +25,13 @@ classDiagram
         +getDisciplina(): String
     }
 
+    class Discplina {
+        -nome: String
+        -Alunos: Alunos[]
+        +inserirAluno(): void
+        +removerAluno(): void
+    }
+
     Pessoa <|-- Aluno
     Pessoa <|-- Professor
 ```
