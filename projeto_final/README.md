@@ -9,7 +9,7 @@
 1. Cadastro de Alunos, Disciplinas e Professores:
     * Capacidade de cadastrar alunos, disciplinas e professores através da interface de texto.
 
-2. Inserir e remover alunos de disciplinas
+2. [x] Inserir e remover alunos de disciplinas
 
 3. Atribuir e remover disciplinas de Professor
     * Cada disciplina só pode ter 1 professor 
