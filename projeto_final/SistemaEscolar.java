@@ -10,6 +10,7 @@ public class SistemaEscolar {
     // metodo construtor
     public SistemaEscolar ( ) {
         this.disciplinas = new ArrayList<>();
+        this.professores = new ArrayList<>();
     }
 
     // metodo para cadastrar nova disciplina
