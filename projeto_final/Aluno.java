@@ -7,11 +7,28 @@ public class Aluno {
     private String nome;
     private int matricula;
     private ArrayList<Nota> notas;
-    private ArrayList<Disciplina> disciplinas;
 
-    public Aluno ( ) {
+    public Aluno ( String nome, int matricula ) {
+        this.nome = nome;
+        this.matricula = matricula;
         this.notas = new ArrayList<>();
-        this.disciplinas = new ArrayList<>();
     }
+
+    public String getNome ( ) {
+        return this.nome;
+    }
+
+    public int getMatricula ( ) {
+        return this.matricula;
+    }
+
+    public void setNome ( String nome ) {
+        this.nome = nome;
+    }
+
+    public void setMatricula ( int matricula ) {
+        this.matricula = matricula;
+    }
+
 
 }

@@ -11,7 +11,7 @@
 
 2. [x] Inserir e remover alunos de disciplinas
 
-3. Atribuir e remover disciplinas de Professor
+3. [x] Atribuir e remover disciplinas de Professor
     * Cada disciplina só pode ter 1 professor 
 
 4. Registro de Notas:
@@ -38,33 +38,68 @@
 
 ```mermaid
 classDiagram
-    class Pessoa {
-        -nome: String
-        -idade: int
-        +getNome(): String
-        +getIdade(): int
-        +setNome(): void
-        +setIdade(): void
-    }
 
     class Aluno {
+        -nome: String
         -matricula: int
-        -curso: String
-        +getNotas(): double
+        -notas: Nota[]
+        +getNome(): String
+        +getMatricula(): int
+        +setNome(): void
+        +setMatricula(): void
     }
 
     class Professor {
+        -nome: String
+        -matricula: int
         -disciplina: Disciplina
-        +getDisciplina(): String
+        -possuiDisciplina: boolean
+        +getNome(): String
+        +getMatricula(): int
+        +atribuirDisciplina(): void
+        +removerDisciplina(): void
+        +getPossuiDisciplina(): boolean
     }
 
     class Discplina {
+        -codigo: int
         -nome: String
-        -Alunos: Alunos[]
+        -Alunos: Aluno[]
+        +getNome(): String
+        +getCodigo(): int
         +inserirAluno(): void
         +removerAluno(): void
+        +listarAlunosDaDisciplina(): void
     }
 
-    Pessoa <|-- Aluno
-    Pessoa <|-- Professor
+    class Nota {
+        -nota1: double
+        -nota2: double
+        -notaFinal: double
+        +setNota1(): void
+        +setNota2(): void
+        +setNotaFinal(): void
+        +getNota1(): double
+        +getNota2(): double
+        +getNotaFinal(): double
+        +calcularMediaParcial(): double
+        +calcularMediaFinal(): double
+    }
+
+    class SistemaEscolar {
+        -professores: Professor[]
+        -disciplinas: Disciplina[]
+        +cadastrarDisciplina(): void
+        +removerDisciplina(): void
+        +cadastrarProfessor(): void
+        +removerProfessor(): void
+        +atribuirDisciplina(): void
+        +removerDisciplinaDeProfessor(): void
+        +adicionarAluno(): void
+        +excluirAluno(): void
+        +listarProfessores(): void
+        +listarDisciplinas(): void
+        +listarAlunos(): void
+    }
+
 ```
